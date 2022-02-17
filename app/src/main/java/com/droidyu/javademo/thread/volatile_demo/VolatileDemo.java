@@ -1,21 +1,20 @@
 package com.droidyu.javademo.thread.volatile_demo;
 
 public class VolatileDemo {
-    private boolean running = true;
-
-    public static void main(String[] args) {
-        new VolatileDemo().runDemo1();
-    }
+    public boolean running = true;
 
     public void stop() {
         running = false;
     }
+}
 
-    public void runDemo1() {
+class Test {
+    public static void main(String[] args) {
+        VolatileDemo demo = new VolatileDemo();
         System.out.println(Thread.currentThread().getName() + " start");
         new Thread(() -> {
             System.out.println(Thread.currentThread().getName() + " start");
-            while (running) {
+            while (demo.running) {
 
             }
             System.out.println(Thread.currentThread().getName() + " end");
@@ -26,7 +25,7 @@ public class VolatileDemo {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        stop();
+        demo.stop();
         System.out.println(Thread.currentThread().getName() + " end");
     }
 }

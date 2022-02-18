@@ -1,4 +1,4 @@
-package com.droidyu.javademo.thread.annotation.processor;
+package com.droidyu.javademo.annotation.processor;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

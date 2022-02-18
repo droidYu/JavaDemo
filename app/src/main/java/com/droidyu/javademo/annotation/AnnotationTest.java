@@ -1,4 +1,4 @@
-package com.droidyu.javademo.thread.annotation;
+package com.droidyu.javademo.annotation;
 
 @MyAnnotation("no value")
 //@MyMethod //这里会报错，编译不能通过

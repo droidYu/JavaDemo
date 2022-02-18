@@ -1,4 +1,4 @@
-package com.droidyu.javademo.thread.annotation;
+package com.droidyu.javademo.annotation;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

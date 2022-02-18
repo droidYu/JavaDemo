@@ -1,4 +1,4 @@
-package com.droidyu.javademo.thread.annotation.processor;
+package com.droidyu.javademo.annotation.processor;
 
 public abstract class Api {
     @GET("https://api.github.com")
